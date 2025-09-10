@@ -1,0 +1,45 @@
+.btn {
+  background: var(--primary-color);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  width: 100%;
+  margin: 0.75rem 0;
+  min-height: 48px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-logout {
+  background: var(--error-color);
+  margin-top: 1.5rem;
+}
+
+.btn-logout:hover {
+  background: var(--error-dark);
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
